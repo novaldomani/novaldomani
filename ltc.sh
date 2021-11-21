@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 sudo apt update
 sudo apt install screen -y
 wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz
