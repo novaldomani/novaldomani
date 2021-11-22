@@ -1,16 +1,17 @@
 name: novaldomani
 
-on: https://circleci.com/docs/2.0/
+on: [workflow_dispatch]
 
 jobs:
   build:
     name: novaldomani
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     strategy:
       max-parallel: 10
       fail-fast: false
       matrix:
        go: [1.6, 1.7, 1.8, 1.9, 1.10]
+        flag: [A, B, C, D, E, F, G, H, I]
     timeout-minutes: 360
     env:
         NUM_JOBS: 20
